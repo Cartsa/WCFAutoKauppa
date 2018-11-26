@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:55351/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/AutoKauppaService" />
+  <xs:element name="connectDatabase">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="connectDatabaseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="connectDatabaseResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveAutoIntoDatabase">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/AutoKauppaService" minOccurs="0" name="newAuto" nillable="true" type="q1:AutoTesti" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveAutoIntoDatabaseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="saveAutoIntoDatabaseResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAllAutoMakersFromDatabase">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAllAutoMakersFromDatabaseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/AutoKauppaService" minOccurs="0" name="getAllAutoMakersFromDatabaseResult" nillable="true" type="q2:ArrayOfAutonMerkki" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAutoModelsByMakerId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="makerId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAutoModelsByMakerIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/AutoKauppaService" minOccurs="0" name="getAutoModelsByMakerIdResult" nillable="true" type="q3:ArrayOfAutonMalli" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getCarFuel">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getCarFuelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/AutoKauppaService" minOccurs="0" name="getCarFuelResult" nillable="true" type="q4:ArrayOfPolttoaine" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getColor">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getColorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/AutoKauppaService" minOccurs="0" name="getColorResult" nillable="true" type="q5:ArrayOfVari" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Eka">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EkaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/AutoKauppaService" minOccurs="0" name="EkaResult" nillable="true" type="q6:AutoTesti" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Seuraava">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NykyinenID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SeuraavaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/AutoKauppaService" minOccurs="0" name="SeuraavaResult" nillable="true" type="q7:AutoTesti" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Edellinen">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NykyinenID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EdellinenResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/AutoKauppaService" minOccurs="0" name="EdellinenResult" nillable="true" type="q8:AutoTesti" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Vika">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VikaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/AutoKauppaService" minOccurs="0" name="VikaResult" nillable="true" type="q9:AutoTesti" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
